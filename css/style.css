@@ -591,6 +591,13 @@ li {
     margin-bottom: 50px;
 }
 
+a:has(.vpbutton) {
+    text-decoration: none;
+    display: block;
+    width: fit-content;
+    margin: auto;
+}
+
 .vpbutton:hover {
     transform: scale(1.1);
 }
@@ -1161,6 +1168,24 @@ li {
 
 @media (max-width: 780px) {
 
+    /*layout nav*/
+    .logo {
+        width: 40%;
+        height: auto;
+    }
+
+    .navbar-icon {
+        display: flex;
+        gap: 15px;
+        align-items: center;
+    }
+
+
+    .homelogo {
+        width: 75%;
+    }
+
+    /*nav*/
     a.nav {
         text-decoration: none;
         display: flex;
@@ -1310,6 +1335,23 @@ li {
 }
 
 @media (max-width: 680px) {
+
+    /*layout nav*/
+    .logo {
+        width: 30%;
+        height: auto;
+    }
+
+    .navbar-icon {
+        display: flex;
+        gap: 6px;
+        align-items: center;
+    }
+
+
+    .homelogo {
+        width: 55%;
+    }
 
     /*wie ben ik*/
     .containerwbi-left {
@@ -1609,6 +1651,16 @@ li {
 
 @media (max-width: 580px) {
 
+    /*layout nav*/
+
+
+    .navbar-icon {
+        display: flex;
+        gap: 2px;
+        align-items: center;
+    }
+
+
     /*digidive*/
     .ddflex {
         display: flex;
@@ -1638,7 +1690,20 @@ li {
 
 @media (max-width: 480px) {
 
-     a.nav {
+    .logo {
+        width: 20% !important;
+        height: auto;
+    }
+
+    .index-page .logo {
+        width: 40% !important;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    a.nav {
         text-decoration: none;
         display: flex;
         align-items: center;
@@ -1659,7 +1724,7 @@ li {
 
     .containersk-up {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         margin-bottom: 50px;
         margin-top: 50px;
         gap: 25px;
@@ -1667,54 +1732,59 @@ li {
 
     .containersk-down {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         gap: 25px;
         padding-left: 10px;
+
+    }
+
+    .icon {
+        width: 40px;
     }
 
     .grid {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(4, 1fr);
         gap: 10px;
         padding-top: 20px;
         padding-bottom: 20px;
     }
 
     .skborder {
-        border: #3B4B41 solid 10px;
-        width: 50%;
+        border: #3B4B41 solid 5px;
+        width: 100%;
         height: auto;
         padding: 10px 20px;
         box-shadow: 20px 20px 10px rgba(0, 0, 0, 0.5);
     }
 
     .skborder2 {
-        border: #3B4B41 solid 10px;
-        width: 50%;
+        border: #3B4B41 solid 5px;
+        width: 115%;
         height: auto;
         padding: 10px 20px;
         box-shadow: 20px 20px 10px rgba(0, 0, 0, 0.5);
     }
 
     .skborder3 {
-        border: #3B4B41 solid 10px;
-        width: 50%;
+        border: #3B4B41 solid 5px;
+        width: 100%;
         height: auto;
         padding: 10px 20px;
         box-shadow: 20px 20px 10px rgba(0, 0, 0, 0.5);
     }
 
     .lijnsk {
-        width: 100px;
-        height: 6px;
+        width: 145px;
+        height: 3px;
         background-color: #3B4B41;
         margin-bottom: 10px;
     }
 
 
     .lijnsk2 {
-        width: 100px;
-        height: 6px;
+        width: 145px;
+        height: 3px;
         background-color: #3B4B41;
         margin-bottom: 10px;
     }
@@ -1770,8 +1840,8 @@ li {
     .bgpr {
         display: flex;
         background-color: #3B4B41;
-        width: 360px;
-        height: 200px;
+        width: 280px;
+        height: 150px;
         margin: auto;
         padding: 40px 20px;
         margin-top: 50px;
@@ -1788,9 +1858,17 @@ li {
     }
 
     .info .sub {
-        font-size: 15px;
+        font-size: 12px;
         font-family: "inter-variable", sans-serif;
         font-weight: bold;
+        color: black;
+    }
+
+    .info {
+        background-color: white;
+        padding: 2px 5px;
+        margin-left: -8px;
+        margin-bottom: -11px;
     }
 
     .projectencontainer {
@@ -1810,6 +1888,24 @@ li {
         color: white;
     }
 
+    .contact-form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .contact-form button {
+        align-self: flex-start;
+        background: #3B4B41;
+        border: none;
+        color: white;
+        text-decoration: none;
+        padding: 5px 15px;
+        font-size: 9px;
+        cursor: pointer;
+        transition: 0.2s ease;
+    }
+
     .background-image2 {
         width: 80%;
         margin: auto;
@@ -1824,7 +1920,7 @@ li {
         align-items: center;
         justify-content: space-between;
         display: flex;
-        padding: 75px 50px;
+        padding: 18px 30px;
         margin-top: 5%;
         margin-left: -15px;
     }
@@ -1832,6 +1928,19 @@ li {
     /*footer*/
     .pfooter {
         font-size: 14px;
+    }
+
+    /*layout*/
+    .navbar-icon {
+        display: flex;
+        gap: 0px;
+        align-items: center;
+        margin-top: 5px;
+    }
+
+
+    .homelogo {
+        width: 45%;
     }
 
     /*digidive*/
@@ -1851,12 +1960,12 @@ li {
     }
 
     .dd-right1 {
-        width: 80px;
+        width: 75px;
         height: auto;
     }
 
     .dd-right2 {
-        width: 72px;
+        width: 68px;
         height: auto;
     }
 
@@ -1865,8 +1974,10 @@ li {
         flex-direction: column;
         gap: 10px;
         width: 35%;
+        margin-left: -15px;
     }
 }
+
 
 
 
